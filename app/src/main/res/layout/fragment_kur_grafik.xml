@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="#E0E0E0"
+    android:weightSum="5"
+    >
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="2"
+            android:text="Döviz Türünü Seciniz: "
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+
+            />
+
+        <Spinner
+            android:id="@+id/spinner_cevirici"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="3"
+            android:background="#F0F0F0"
+            android:spinnerMode="dialog"
+            android:splitMotionEvents="true">
+
+        </Spinner>
+    </LinearLayout>
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup_kurgrafik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.3"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/radio_gunlukgrafik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Günlük" />
+
+        <RadioButton
+            android:id="@+id/radio_haftalikgrafik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Haftalık" />
+
+        <RadioButton
+            android:id="@+id/radio_aylikgrafik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Aylık" />
+
+        <RadioButton
+            android:id="@+id/radio_yillikgrafik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Yıllık" />
+    </RadioGroup>
+<LinearLayout
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="4"
+    >
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
+
+</LinearLayout>
+

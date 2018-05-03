@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "904820906122",
+    "firebase_url": "https://dovizapp-chat.firebaseio.com",
+    "project_id": "dovizapp-chat",
+    "storage_bucket": "dovizapp-chat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:904820906122:android:f9f40db48ddd2197",
+        "android_client_info": {
+          "package_name": "iliada.dovizapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "904820906122-2fghdnac6lk3cvisuf6bi3ouht1shqd9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5Xts-9oJIiCOlRPX61DleSPsR8xiiAok"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

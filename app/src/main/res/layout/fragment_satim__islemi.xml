@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="iliada.dovizapp.Alim_Islemi_Fragment"  >
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:background="@android:color/white"
+        android:weightSum="5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/tv_para_birimitext"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:text="PARA BİRİMİ: "
+                />
+
+
+            <Spinner
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_para_birimitext"
+                android:splitMotionEvents="true"
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F0F0F0"
+                android:spinnerMode="dialog"
+
+
+
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/tv_guncelkurtext"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="18dp"
+                android:text="Birim Kur Değeri:"
+                />
+
+
+            <EditText
+                android:id="@+id/tv_birimkur"
+                android:layout_below="@id/tv_guncelkurtext"
+                android:focusable="false"
+                android:text="0 ₺"
+                android:textColor="@android:color/black"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/tv_miktartext"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="18dp"
+                android:text="Satış Miktarı:"
+                />
+
+
+            <EditText
+                android:id="@+id/tv_miktar"
+                android:layout_below="@id/tv_miktartext"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:maxLength="4"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/tv_gelirtext"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="18dp"
+                android:text="Toplam TL Kazancı:"
+                />
+
+
+            <EditText
+                android:id="@+id/tv_gelir"
+                android:layout_below="@id/tv_gelirtext"
+                android:focusable="false"
+                android:text="0 ₺"
+                android:textColor="@android:color/black"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="0.7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <Button
+                android:id="@+id/btn_sell"
+                android:text="ONAYLA"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonshapeforsell"
+                android:shadowRadius="5"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:weightSum="3"
+    android:orientation="vertical"
+    android:id="@+id/fragment_varliklarim"
+    tools:context="iliada.dovizapp.Guncel_Kurlar_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+   <TableLayout
+       android:layout_weight="0.3"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+     >
+
+       <TableRow
+           android:padding="10dp"
+           android:gravity="center"
+           android:background="@android:color/white"
+           android:layout_marginTop="5dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+
+           <TextView
+
+               android:textColor="@android:color/background_dark"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textStyle="bold|italic"
+               android:text="Mevcut Turk Lirası: "
+               android:textSize="20dp">
+           </TextView>
+           <TextView
+               android:id="@+id/tv_mevcut_tl_miktari"
+               android:textColor="@android:color/background_dark"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:textStyle="bold|italic"
+               android:text="1000 ₺"
+               android:textSize="20dp">
+           </TextView>
+
+       </TableRow>
+       </TableLayout>
+
+<ScrollView
+    android:layout_weight="2.7"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+    <TableLayout
+        android:id="@+id/tl"
+        android:layout_height="0dp"
+        android:layout_width="match_parent">
+
+        <TableRow
+            android:id="@+id/varlik_yok_row"
+            android:visibility="visible"
+            android:gravity="center"
+            android:padding="20dp"
+            android:background="@android:color/white"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="10sp"
+                android:textStyle="bold|italic"
+                android:textColor="@android:color/black"
+                android:text="MEVCUT DÖVİZ VARLIĞINIZ BULUNMAMAKTADIR..."
+                />
+
+        </TableRow>
+
+    </TableLayout>
+</ScrollView>
+</LinearLayout>

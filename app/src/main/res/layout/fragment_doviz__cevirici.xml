@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="#FAFAFA"
+    android:weightSum="5"
+    >
+
+
+
+<LinearLayout
+
+    android:layout_weight="0.6"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:text="Döviz Türünü Seciniz: "
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+
+        />
+    <Spinner
+        android:layout_marginTop="5dp"
+        android:id="@+id/spinner_cevirici"
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:splitMotionEvents="true"
+        android:background="#F0F0F0"
+        android:spinnerMode="dialog"
+        android:layout_height="wrap_content">
+
+    </Spinner>
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_weight="0.7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Miktar"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:id="@+id/tv_miktarcevirici"
+            android:inputType="number"
+            android:textColor="@android:color/black"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:maxLength="4"
+
+            />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_gravity="center"
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="0dp">
+
+        <RadioButton
+            android:id="@+id/radio_alis"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alış Üstünden \n Hesapla "
+            />
+        <RadioButton
+            android:id="@+id/radio_satis"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Satış Üstünden \n Hesapla"
+            />
+    </RadioGroup>
+    <ScrollView
+        android:layout_weight="3.2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+        <LinearLayout
+            android:id="@+id/ll_genelcevirici"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            >
+
+           <!-- Tl satırı için <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                >
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Türk Lirası Değeri Karşılığı: 1234242414 ₺"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+ -->
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

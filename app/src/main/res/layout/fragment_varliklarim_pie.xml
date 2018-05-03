@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:scatter="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pie_chart"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context="iliada.dovizapp.varliklarim_fragment_pie">
+
+
+    <TextView
+        android:visibility="visible"
+        android:id="@+id/tv_pievarlikyok"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Mevcut Döviz Varlığınız Bulunmamaktadır..."
+        android:layout_weight="4"
+        android:textSize="15sp"
+        />
+
+
+
+    <RadioGroup
+        android:checkedButton="@+id/radio_ton"
+        android:visibility="gone"
+        android:id="@+id/radioGroup_piecolor"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radio_ton"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tonlamalı Grafik"
+            />
+        <RadioButton
+            android:id="@+id/radio_renkli"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Renkli Grafik"
+            />
+    </RadioGroup>
+
+
+    <com.intrusoft.scatter.PieChart
+        android:layout_below="@id/radioGroup_piecolor"
+        android:id="@+id/pie_chart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        scatter:aboutChart="VARLIKLARIM"
+        android:layout_above="@+id/footer"
+        scatter:aboutTextColor="@android:color/black"
+        scatter:centerColor="@android:color/holo_orange_light"
+        scatter:chartColor="@android:color/holo_orange_dark"
+        scatter:textSize="30"
+        scatter:aboutTextSize="35"
+        scatter:textColor="@android:color/black" />
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:visibility="invisible"
+                android:id="@+id/radioGroup_pie"
+                android:checkedButton="@+id/radio_yuzdelik"
+
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radio_yuzdelik"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Varlıklarımı Yüzdelik \n Olarak Göster"
+                    />
+                <RadioButton
+                    android:id="@+id/radio_miktar"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Varlıklarımı Miktara \n Bağlı Olarak Göster"
+                    />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_piebilgilendirme"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="Döviz Varlıklarınızın Miktara Bağlı Olarak Oluşturulan Grafigi Yukarıdaki Gibidir.."
+                android:layout_weight="0.5"
+                android:textSize="15sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+  <!--  <com.github.mikephil.charting.charts.PieChart
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_weight="4"
+        android:id="@+id/idPieChart">
+
+    </com.github.mikephil.charting.charts.PieChart> -->
+
+
+
+
+
+</RelativeLayout>

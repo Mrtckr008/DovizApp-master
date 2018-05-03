@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@android:color/holo_orange_dark"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    <!-- 160tı -->
+   <!-- <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        app:srcCompat="@android:drawable/sym_def_app_icon" /> -->
+
+    <TextView
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:textSize="30sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold|italic"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:text="EXCHANGER"
+        android:paddingBottom="10dp"
+/>
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:textSize="12sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold|italic"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:text="Feel Better With Exchanger !"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:id="@+id/fragment_guncel_kurlar_mainlayout"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    tools:context="iliada.dovizapp.Guncel_Kurlar_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+</RelativeLayout>

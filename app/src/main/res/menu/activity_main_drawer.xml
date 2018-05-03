@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Portföyüm">
+        <menu>
+    <group android:checkableBehavior="single">
+
+
+          <item
+
+            android:id="@+id/nav_profil"
+            android:icon="@drawable/ic_profil"
+            android:title="Profil Bilgilerim" />
+        <item
+            android:id="@+id/nav_varliklarim"
+            android:icon="@drawable/ic_hesapozeti"
+            android:title="Varlıklarım" />
+
+        <item
+            android:id="@+id/nav_hesapozeti"
+            android:icon="@drawable/icon_akportfoy"
+            android:title="Hesap Geçmişim"  />
+
+    </group>
+            </menu>
+    </item>
+
+    <item android:title="Genel Araçlar">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_guncel_kur_degerleri"
+                    android:icon="@drawable/icon_menu4act"
+                    android:title="Güncel Kur Değerleri" />
+
+                   <item
+
+                    android:id="@+id/nav_kurgrafik"
+                    android:icon="@drawable/image_hisseal"
+                    android:title="Kur Değişim Grafikleri" />
+
+
+                <item
+
+                    android:id="@+id/nav_dovizcevirici"
+                    android:icon="@drawable/icon_menu2act"
+                    android:title="Döviz Çevirici"  />
+
+
+
+                <item
+                    android:id="@+id/nav_chat"
+                    android:icon="@drawable/ic_chat"
+                    android:title="Grup Chat'e Katıl"  />
+                <item
+                    android:id="@+id/nav_uygulamahakkında"
+                    android:icon="@mipmap/ic_launcher"
+                    android:title="Uygulama Hakkında"  />
+
+            </group>
+        </menu>
+    </item>
+    <item android:title="Alım &amp; Satım İşlemleri">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+
+                    android:id="@+id/nav_alimislemi"
+                    android:icon="@drawable/ic_alimyap"
+                    android:title="Alış İşlemleri" />
+                <item
+                    android:id="@+id/nav_satimislemi"
+                    android:icon="@drawable/ic_alim"
+                    android:title="Satış İşlemleri"  />
+
+            </group>
+        </menu>
+    </item>
+    <item android:title="Çıkış">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_hesapsil"
+                    android:icon="@drawable/ic_delete_account"
+                    android:title="Hesabımı Sil"  />
+                <item
+                    android:id="@+id/nav_cikis"
+                    android:icon="@drawable/ic_cikis"
+                    android:title="Oturumu Kapat"  />
+
+            </group>
+        </menu>
+    </item>
+
+
+
+</menu>

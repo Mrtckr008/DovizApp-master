@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/help_relative"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:background="@android:color/holo_orange_dark">
+
+<LinearLayout
+    android:id="@+id/hakkinda_head"
+
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Feel Better With Exchanger ! "
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:textStyle="italic|bold"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
+    <ScrollView
+        android:id="@+id/helpScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hakkinda_head"
+        android:layout_marginTop="10dp"
+        android:scrollbarSize="1.5dp">
+
+        <RelativeLayout
+            android:id="@+id/help_content_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <include
+                layout="@layout/layout_include_hakkinda"></include>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
